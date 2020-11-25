@@ -3,25 +3,27 @@ Schleicher R., Nitschke M., Martschinke J., Stamminger M., Eskofier B., Klucken 
 BASH: Biomechanical Animated Skinned Human for Visualization of Kinematics and Muscle Activity.
 16th International Conference on Computer Graphics Theory and Applications (GRAPP), accepted.
 
+![BASH Teaser](teaser.jpg)
+
 # BASH Model
 Converting a OpenSim[[1]](#1) format file (.osim + .mot) to the SCAPE[[2]](#2) framework. 
 Visualization tool to inspect the animated model in 3D.
 
-## Input Model: OpenSim
+## Processing Pipeline
+### Input Model: OpenSim
 - Parser
  - Model (.osim)
  - Scale factors (.xml)
  - Motion (.mot)
  - Muscle Activation (.sto)
 
-## 0. Baseline model Design for a new Musculoskeltal Model (in Blender)
+### Baseline model Design for a new Musculoskeltal Model (in Blender)
 - modeling
  - import SCAPE mesh
  - rig and skin skeleton (same hierarchy as musucloskeletal model)
  - place markers (same set as musculoskeletal model)
 - export model (.dae reorders vertices...) => mesh, markers & weights files
 
-## 1.: Processing Pipeline
 ### Scaling
 - performed automatically, applied correctly to the hierachy, applied in bone space
 - use .xml file or my estimation (defined in settings.h)
@@ -45,13 +47,10 @@ Visualization tool to inspect the animated model in 3D.
 - computed at run-time
 - color coding in Fragment Shader
 
-### live 3D Viewer
-- keyboard shortcuts, see settings.h
-
-## General
+## Settings
 - settings.h for keyshortcuts, constants and other configurations
 
-### Project structure and dependencies
+## Project structure and dependencies
 - SCAPE: The main Windows-Application that handles the model conversion and visualization
  - External dependencies (minimum required version):
   - SFML (>= 2.5.1)
