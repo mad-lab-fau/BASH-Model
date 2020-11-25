@@ -1,12 +1,13 @@
 # BASH - Biomechanical Animated Skinned Human
-Schleicher R., Nitschke M., Martschinke J., Stamminger M., Eskofier B., Klucken J., Koelewijn A. (2021).
+
+![BASH Teaser](img/teaser.jpg)
+
+Schleicher, R., Nitschke, M., Martschinke, J., Stamminger, M., Eskofier, B., Klucken, J., Koelewijn, A. (2021).
 BASH: Biomechanical Animated Skinned Human for Visualization of Kinematics and Muscle Activity.
 16th International Conference on Computer Graphics Theory and Applications (GRAPP), accepted.
 
-![BASH Teaser](teaser.jpg)
-
 # BASH Model
-Converting a OpenSim[[1]](#1) format file (.osim + .mot) to the SCAPE[[2]](#2) framework. 
+Converting a OpenSim [[1]](#1) format file (.osim + .mot) to the SCAPE [[2]](#2) framework. 
 Visualization tool to inspect the animated model in 3D.
 
 ## Processing Pipeline
@@ -84,6 +85,9 @@ Visualization tool to inspect the animated model in 3D.
  - Define the flag '#define SAVE_MATRIX 0' once to write new binaries in the correct format (64bit wording).
  - The folder 'data\default_scape_data' should contain the binary files: 'matrixDGrad.bin', 'SCAPE_DGrad_numeric.bin', 'SCAPE_DGrad_symbolic.bin', 'SCAPE_pose.bin'.
 
+## Example result
+OpenSim's visualization compared to our visualization (data set: straight running [[3]](#3)):
+![Example](img/straightRunningMuscle.gif)
 
 ## References
 <a id="1">[1]</a>
@@ -95,3 +99,8 @@ PLoSComputational Biology, 14(7):1–20.
 Anguelov, D., Srinivasan, P., Koller, D., Thrun, S., Rodgers,J., and Davis, J. (2005).
 SCAPE: Shape Completionand Animation of People.
 InACM Transactions onGraphics, volume 24, pages 408–416.
+
+<a id="3">[3]</a> 
+Nitschke, M., Dorschky, E., Heinrich, D., Schlarb, H., Eskofier, B. M., Koelewijn, A. D., and Van den Bogert, A. J. (2020).
+Efficient trajectory optimization for curved running using a 3D musculoskeletal model with implicit dynamics.
+Scientific Reports, 10(17655).
