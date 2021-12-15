@@ -4,7 +4,9 @@
 
 Schleicher, R., Nitschke, M., Martschinke, J., Stamminger, M., Eskofier, B., Klucken, J., Koelewijn, A. (2021).
 BASH: Biomechanical Animated Skinned Human for Visualization of Kinematics and Muscle Activity.
-16th International Conference on Computer Graphics Theory and Applications (GRAPP), accepted.
+16th International Conference on Computer Graphics Theory and Applications (GRAPP), 2021.
+
+https://www.scitepress.org/Papers/2021/102106/102106.pdf
 
 # BASH Model
 Converting a OpenSim [[1]](#1) format file (.osim + .mot) to the SCAPE [[2]](#2) framework. 
